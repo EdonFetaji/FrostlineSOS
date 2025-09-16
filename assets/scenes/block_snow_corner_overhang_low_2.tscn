@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://bo74dcm62xdpt"]
+
+[ext_resource type="PackedScene" uid="uid://b7hc301cr77af" path="res://assets/block-snow-corner-overhang-low.glb" id="1_1dxwt"]
+
+[node name="block-snow-corner-overhang-low2" instance=ExtResource("1_1dxwt")]

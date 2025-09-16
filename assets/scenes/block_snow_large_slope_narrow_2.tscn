@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://csp2c2h2gfoqx"]
+
+[ext_resource type="PackedScene" uid="uid://3wq1s6o0g00g" path="res://assets/block-snow-large-slope-narrow.glb" id="1_dlyr6"]
+
+[node name="block-snow-large-slope-narrow2" instance=ExtResource("1_dlyr6")]

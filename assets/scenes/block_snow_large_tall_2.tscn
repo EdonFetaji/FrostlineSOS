@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://t14u2nkl55wl"]
+
+[ext_resource type="PackedScene" uid="uid://d2p7o2lrbcpcb" path="res://assets/block-snow-large-tall.glb" id="1_c0dx8"]
+
+[node name="block-snow-large-tall2" instance=ExtResource("1_c0dx8")]

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqnrrcvo8af2j"]
+
+[ext_resource type="PackedScene" uid="uid://bsq364svys3bm" path="res://assets/radio/battery_pack.gltf" id="1_vqjmd"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_vqjmd")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)

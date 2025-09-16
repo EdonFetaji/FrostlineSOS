@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4tfnacnkgn3t"]
+
+[ext_resource type="PackedScene" uid="uid://clvriap6atjcx" path="res://assets/Mountain_winter_007.fbx" id="1_by0sy"]
+[ext_resource type="Material" uid="uid://cbjb6f5vdyhfl" path="res://assets/materials/mountain.tres" id="2_eakuw"]
+
+[node name="Mountain_winter_007" instance=ExtResource("1_by0sy")]
+
+[node name="Mountain_winter_007" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_eakuw")

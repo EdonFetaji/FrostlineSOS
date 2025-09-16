@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://q57dxojdnjum"]
+
+[ext_resource type="PackedScene" uid="uid://b04okpqqn26pn" path="res://assets/block-snow-edge.glb" id="1_74il8"]
+
+[node name="block-snow-edge2" instance=ExtResource("1_74il8")]

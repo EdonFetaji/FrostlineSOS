@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxt2qlcagjrem"]
+
+[ext_resource type="Script" uid="uid://duynrlq1o5xys" path="res://scripts/radioPart.gd" id="1_jhxst"]
+[ext_resource type="PackedScene" uid="uid://b7pkd67t3rc7l" path="res://assets/radio/radio_station.tscn" id="2_uxuiy"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_637aw"]
+radius = 3.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dlxvm"]
+emission_enabled = true
+emission = Color(1.05888e-06, 0.308369, 0.399916, 1)
+emission_energy_multiplier = 1.5
+
+[sub_resource type="TorusMesh" id="TorusMesh_th4ex"]
+material = SubResource("StandardMaterial3D_dlxvm")
+inner_radius = 1.2
+outer_radius = 1.35
+
+[node name="RadioStation" type="Area3D" groups=["RadioPart"]]
+script = ExtResource("1_jhxst")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_637aw")
+
+[node name="part" parent="." instance=ExtResource("2_uxuiy")]
+transform = Transform3D(5.2, 0, 0, 0, 5.2, 0, 0, 0, 5.2, 0, 0, 0)
+
+[node name="Highlight" type="Node3D" parent="."]
+
+[node name="Ring" type="MeshInstance3D" parent="Highlight"]
+transform = Transform3D(1.1322, 0, 0, 0, 1.20102, 0, 0, 0, 1.74381, 0, 1.12894, -0.209649)
+mesh = SubResource("TorusMesh_th4ex")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Highlight"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.171403, 0.918297, 0)
+light_energy = 0.8
+omni_range = 1.55232

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cue3joak6f3w7"]
+
+[ext_resource type="PackedScene" uid="uid://chckrcgjkqxdh" path="res://assets/radio/satelite_dish.gltf" id="1_xgina"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_xgina")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)

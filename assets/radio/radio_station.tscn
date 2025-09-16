@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7pkd67t3rc7l"]
+
+[ext_resource type="PackedScene" uid="uid://b4gg4r25hhqkx" path="res://assets/radio/radio-station.gltf" id="1_t5sms"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("1_t5sms")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)

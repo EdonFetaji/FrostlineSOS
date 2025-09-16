@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbiv6kento4un"]
+
+[ext_resource type="Script" uid="uid://42nnfdnw54ev" path="res://scripts/ice_zone.gd" id="1_u2gia"]
+[ext_resource type="Texture2D" uid="uid://w6fjx32pagpw" path="res://assets/textures/snow-floor-texture.png" id="2_3wjfx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1cs8i"]
+size = Vector3(12, 3, 8)
+
+[sub_resource type="Curve" id="Curve_3wjfx"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0]
+point_count = 1
+
+[sub_resource type="CurveTexture" id="CurveTexture_upmo3"]
+curve = SubResource("Curve_3wjfx")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u2gia"]
+transparency = 1
+blend_mode = 1
+albedo_color = Color(0, 0.709804, 0.713726, 0.239216)
+albedo_texture = ExtResource("2_3wjfx")
+albedo_texture_force_srgb = true
+metallic = 0.35
+roughness = 0.08
+clearcoat_enabled = true
+clearcoat_texture = SubResource("CurveTexture_upmo3")
+
+[sub_resource type="QuadMesh" id="QuadMesh_3wjfx"]
+material = SubResource("StandardMaterial3D_u2gia")
+size = Vector2(12, 8)
+
+[node name="IceZone" type="Area3D"]
+script = ExtResource("1_u2gia")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_1cs8i")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.19249e-08, 1, 0, -1, 1.19249e-08, 0, 0, 0)
+visibility_range_end = 10.0
+mesh = SubResource("QuadMesh_3wjfx")

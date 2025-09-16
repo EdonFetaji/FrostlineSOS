@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://cr7wyi6gvgujw"]
+
+[ext_resource type="Shader" uid="uid://cormd5odbto61" path="res://scripts/frosty_shader.gdshader" id="1_xr71g"]
+[ext_resource type="Texture2D" uid="uid://dl6qsm7gok6hw" path="res://assets/textures/frost-overlay-texture.jpg" id="3_tkfxc"]
+[ext_resource type="Script" uid="uid://dokpditha5wqr" path="res://scripts/frosty.gd" id="3_vauh0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d20d8"]
+shader = ExtResource("1_xr71g")
+shader_parameter/freeze = 0.0
+shader_parameter/frost_tex = ExtResource("3_tkfxc")
+shader_parameter/tiling = 1.6
+shader_parameter/tint = Color(0.82, 0.9, 1, 1)
+shader_parameter/desaturate = 0.55
+shader_parameter/edge_bias = 0.45
+shader_parameter/distortion = 0.003
+shader_parameter/time = 0.0
+
+[node name="FrostFX" type="CanvasLayer"]
+layer = 5
+script = ExtResource("3_vauh0")
+
+[node name="Overlay" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_d20d8")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

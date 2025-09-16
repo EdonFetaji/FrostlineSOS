@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmcpbrbs1vg51"]
+
+[ext_resource type="PackedScene" uid="uid://dypbxwmxvt2dw" path="res://assets/Tree_Winter_019.fbx" id="1_gl3xw"]
+[ext_resource type="Material" uid="uid://dyvwrnipoxa15" path="res://assets/materials/tree.tres" id="2_oksj1"]
+
+[node name="Tree_Winter_019" instance=ExtResource("1_gl3xw")]
+
+[node name=" Tree_Winter_019" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_oksj1")
