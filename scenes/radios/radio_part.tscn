@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bb7xdv3ajhhpc" path="res://assets/radio/antenna.tscn" id="1_s5i6a"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_637aw"]
-radius = 3.0
+radius = 1.5
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dlxvm"]
 emission_enabled = true
@@ -20,6 +20,7 @@ outer_radius = 1.35
 script = ExtResource("1_637aw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.31168, 0)
 shape = SubResource("SphereShape3D_637aw")
 
 [node name="part" parent="." instance=ExtResource("1_s5i6a")]

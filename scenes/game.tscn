@@ -259,7 +259,7 @@ metadata/_editor_floor_ = Vector3(0, 3, 0)
 [node name="ground" type="StaticBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="ground"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.626096, 0.334443, 0.509418)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.76212, 0.255128, 0.370197)
 mesh = SubResource("BoxMesh_kvpfn")
 surface_material_override/0 = SubResource("StandardMaterial3D_u5sy4")
 

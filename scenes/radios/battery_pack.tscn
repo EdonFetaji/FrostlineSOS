@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bqnrrcvo8af2j" path="res://assets/radio/battery_pack.tscn" id="2_x84kq"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_637aw"]
-radius = 3.0
+radius = 1.7
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dlxvm"]
 emission_enabled = true
@@ -20,6 +20,7 @@ outer_radius = 1.35
 script = ExtResource("1_xpu1f")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.05986, -0.112729)
 shape = SubResource("SphereShape3D_637aw")
 
 [node name="part" parent="." instance=ExtResource("2_x84kq")]

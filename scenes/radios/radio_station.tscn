@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b7pkd67t3rc7l" path="res://assets/radio/radio_station.tscn" id="2_uxuiy"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_637aw"]
-radius = 3.0
+radius = 1.7
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dlxvm"]
 emission_enabled = true
@@ -20,6 +20,7 @@ outer_radius = 1.35
 script = ExtResource("1_jhxst")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.23221, -0.308576)
 shape = SubResource("SphereShape3D_637aw")
 
 [node name="part" parent="." instance=ExtResource("2_uxuiy")]
